@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Innery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Innery</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">Über uns</a></li>
+                <li><a href="index.html#services">Angebot</a></li>
+                <li><a href="index.html#ai-features">KI-Funktionen</a></li>
+                <li><a href="index.html#safety">Sicherheit</a></li>
+                <li><a href="index.html#contact">Kontakt</a></li>
+                <li class="user-menu">
+                    <button class="user-menu-btn">
+                        <img src="https://ui-avatars.com/api/?name=Max+Mustermann" alt="Profilbild" class="avatar">
+                        <span>Max Mustermann</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="user-dropdown">
+                        <a href="#profile"><i class="fas fa-user"></i> Profil</a>
+                        <a href="#settings"><i class="fas fa-cog"></i> Einstellungen</a>
+                        <a href="#notifications"><i class="fas fa-bell"></i> Benachrichtigungen</a>
+                        <a href="login.html" class="logout"><i class="fas fa-sign-out-alt"></i> Abmelden</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <div class="dashboard-container">
+            <!-- Sidebar -->
+            <aside class="dashboard-sidebar">
+                <nav class="dashboard-nav">
+                    <a href="#overview" class="active">
+                        <i class="fas fa-home"></i>
+                        <span>Übersicht</span>
+                    </a>
+                    <a href="#appointments">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Termine</span>
+                    </a>
+                    <a href="#therapy">
+                        <i class="fas fa-comments"></i>
+                        <span>Therapie</span>
+                    </a>
+                    <a href="#documents">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Dokumente</span>
+                    </a>
+                    <a href="#progress">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Fortschritt</span>
+                    </a>
+                    <a href="#messages">
+                        <i class="fas fa-envelope"></i>
+                        <span>Nachrichten</span>
+                        <span class="badge">3</span>
+                    </a>
+                </nav>
+            </aside>
+
+            <!-- Hauptbereich -->
+            <div class="dashboard-main">
+                <!-- Übersicht -->
+                <section id="overview" class="dashboard-section active">
+                    <h2>Willkommen zurück, Max!</h2>
+                    
+                    <!-- Schnellzugriff -->
+                    <div class="quick-actions">
+                        <button class="action-btn">
+                            <i class="fas fa-plus"></i>
+                            <span>Neuer Termin</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-file-upload"></i>
+                            <span>Dokument hochladen</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-comment"></i>
+                            <span>Nachricht senden</span>
+                        </button>
+                    </div>
+
+                    <!-- Nächste Termine -->
+                    <div class="dashboard-card">
+                        <h3>Nächste Termine</h3>
+                        <div class="appointment-list">
+                            <div class="appointment-item">
+                                <div class="appointment-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Heute, 14:00</span>
+                                </div>
+                                <div class="appointment-details">
+                                    <h4>Online-Sitzung mit Dr. Schmidt</h4>
+                                    <p>Thema: Fortschrittsbesprechung</p>
+                                </div>
+                                <button class="btn secondary">Details</button>
+                            </div>
+                            <div class="appointment-item">
+                                <div class="appointment-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Mo, 10:30</span>
+                                </div>
+                                <div class="appointment-details">
+                                    <h4>Gruppensitzung</h4>
+                                    <p>Thema: Achtsamkeit</p>
+                                </div>
+                                <button class="btn secondary">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fortschrittsübersicht -->
+                    <div class="dashboard-card">
+                        <h3>Ihr Fortschritt</h3>
+                        <div class="progress-overview">
+                            <div class="progress-item">
+                                <div class="progress-circle" data-progress="75">
+                                    <svg viewBox="0 0 36 36">
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    </svg>
+                                    <span class="progress-text">75%</span>
+                                </div>
+                                <span class="progress-label">Therapieziele</span>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-circle" data-progress="60">
+                                    <svg viewBox="0 0 36 36">
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    </svg>
+                                    <span class="progress-text">60%</span>
+                                </div>
+                                <span class="progress-label">Übungen</span>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-circle" data-progress="90">
+                                    <svg viewBox="0 0 36 36">
+                                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    </svg>
+                                    <span class="progress-text">90%</span>
+                                </div>
+                                <span class="progress-label">Teilnahme</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Letzte Aktivitäten -->
+                    <div class="dashboard-card">
+                        <h3>Letzte Aktivitäten</h3>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <i class="fas fa-file-alt"></i>
+                                <div class="activity-content">
+                                    <p>Neues Dokument hochgeladen</p>
+                                    <span class="activity-time">Vor 2 Stunden</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <i class="fas fa-comment"></i>
+                                <div class="activity-content">
+                                    <p>Nachricht von Dr. Schmidt erhalten</p>
+                                    <span class="activity-time">Vor 5 Stunden</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="activity-content">
+                                    <p>Tägliche Übung abgeschlossen</p>
+                                    <span class="activity-time">Vor 1 Tag</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Innery</h4>
+                <p>Now is your time - Digitale Psychotherapie mit KI-Unterstützung</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Rechtliches</h4>
+                <ul>
+                    <li><a href="#datenschutz">Datenschutz</a></li>
+                    <li><a href="#impressum">Impressum</a></li>
+                    <li><a href="#agb">AGB</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Innery. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
