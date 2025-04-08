@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Stress-Spiele & Selbstauswertung - Innery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Innery</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">Über uns</a></li>
+                <li><a href="therapie.html">Therapie</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="ressourcen.html">Ressourcen</a></li>
+                <li><a href="spiele.html" class="active">Spiele & Tests</a></li>
+                <li><a href="index.html#contact">Kontakt</a></li>
+                <li class="auth-links">
+                    <a href="login.html" class="btn secondary">Anmelden</a>
+                    <a href="register.html" class="btn primary">Registrieren</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="games-hero">
+            <div class="container">
+                <h1>Anti-Stress-Spiele & Selbstauswertung</h1>
+                <p>Entspannen Sie sich mit unseren interaktiven Spielen und erfahren Sie mehr über sich selbst durch unsere Tests.</p>
+            </div>
+        </section>
+
+        <section class="games-section">
+            <div class="container">
+                <h2>Anti-Stress-Spiele</h2>
+                <div class="games-grid">
+                    <div class="game-card">
+                        <div class="game-preview">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Atemspiel">
+                        </div>
+                        <div class="game-content">
+                            <h3>Atemspiel</h3>
+                            <p>Folgen Sie dem Ball und atmen Sie im Rhythmus ein und aus.</p>
+                            <div class="game-controls">
+                                <button class="btn primary" id="start-breathing">Spiel starten</button>
+                                <div class="game-stats">
+                                    <span><i class="fas fa-clock"></i> 5 Minuten</span>
+                                    <span><i class="fas fa-heart"></i> Entspannung</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-preview">
+                            <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mandalas">
+                        </div>
+                        <div class="game-content">
+                            <h3>Mandalas ausmalen</h3>
+                            <p>Kolorieren Sie Mandalas und lassen Sie Ihren Stress los.</p>
+                            <div class="game-controls">
+                                <button class="btn primary" id="start-coloring">Spiel starten</button>
+                                <div class="game-stats">
+                                    <span><i class="fas fa-clock"></i> 10 Minuten</span>
+                                    <span><i class="fas fa-palette"></i> Kreativität</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-preview">
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Meditationsspiel">
+                        </div>
+                        <div class="game-content">
+                            <h3>Meditationsspiel</h3>
+                            <p>Finden Sie den richtigen Weg durch das Labyrinth der Gedanken.</p>
+                            <div class="game-controls">
+                                <button class="btn primary" id="start-meditation">Spiel starten</button>
+                                <div class="game-stats">
+                                    <span><i class="fas fa-clock"></i> 8 Minuten</span>
+                                    <span><i class="fas fa-brain"></i> Fokus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-preview">
+                            <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Gratitude Journal">
+                        </div>
+                        <div class="game-content">
+                            <h3>Dankbarkeits-Journal</h3>
+                            <p>Schreiben Sie täglich drei Dinge auf, für die Sie dankbar sind.</p>
+                            <div class="game-controls">
+                                <button class="btn primary" id="start-gratitude">Spiel starten</button>
+                                <div class="game-stats">
+                                    <span><i class="fas fa-clock"></i> 5 Minuten</span>
+                                    <span><i class="fas fa-heart"></i> Positivität</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="questionnaire-section">
+            <div class="container">
+                <h2>Selbstauswertung</h2>
+                <div class="questionnaire-intro">
+                    <p>Unsere Selbstauswertungstests helfen Ihnen, mehr über sich selbst zu erfahren. Wählen Sie einen Test aus und beantworten Sie die Fragen ehrlich. Am Ende erhalten Sie eine detaillierte Auswertung mit Empfehlungen.</p>
+                </div>
+                <div class="questionnaire-grid">
+                    <div class="questionnaire-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Stress-Level-Test</h3>
+                        <p>Ermitteln Sie Ihr aktuelles Stresslevel und erhalten Sie personalisierte Empfehlungen.</p>
+                        <a href="#" class="btn primary" id="start-stress-test">Test starten</a>
+                    </div>
+                    <div class="questionnaire-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Emotionale Intelligenz</h3>
+                        <p>Testen Sie Ihre emotionale Intelligenz und erfahren Sie, wie Sie Ihre Gefühle besser verstehen können.</p>
+                        <a href="#" class="btn primary" id="start-eq-test">Test starten</a>
+                    </div>
+                    <div class="questionnaire-card">
+                        <i class="fas fa-bed"></i>
+                        <h3>Schlafqualität</h3>
+                        <p>Bewerten Sie Ihre Schlafqualität und erhalten Sie Tipps für einen besseren Schlaf.</p>
+                        <a href="#" class="btn primary" id="start-sleep-test">Test starten</a>
+                    </div>
+                    <div class="questionnaire-card">
+                        <i class="fas fa-balance-scale"></i>
+                        <h3>Work-Life-Balance</h3>
+                        <p>Überprüfen Sie Ihre Work-Life-Balance und finden Sie Wege zur Verbesserung.</p>
+                        <a href="#" class="btn primary" id="start-balance-test">Test starten</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-container" id="breathing-game" style="display: none;">
+            <div class="container">
+                <div class="game-header">
+                    <h2>Atemspiel</h2>
+                    <button class="btn secondary" id="close-breathing">Schließen</button>
+                </div>
+                <div class="game-area">
+                    <div class="breathing-ball"></div>
+                    <div class="breathing-instructions">
+                        <p>Atmen Sie ein, wenn der Ball sich ausdehnt.</p>
+                        <p>Atmen Sie aus, wenn der Ball sich zusammenzieht.</p>
+                    </div>
+                    <div class="breathing-timer">5:00</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-container" id="coloring-game" style="display: none;">
+            <div class="container">
+                <div class="game-header">
+                    <h2>Mandalas ausmalen</h2>
+                    <button class="btn secondary" id="close-coloring">Schließen</button>
+                </div>
+                <div class="game-area">
+                    <div class="coloring-canvas">
+                        <canvas id="mandala-canvas"></canvas>
+                    </div>
+                    <div class="coloring-controls">
+                        <div class="color-palette">
+                            <button class="color-btn" style="background-color: #ff0000;"></button>
+                            <button class="color-btn" style="background-color: #00ff00;"></button>
+                            <button class="color-btn" style="background-color: #0000ff;"></button>
+                            <button class="color-btn" style="background-color: #ffff00;"></button>
+                            <button class="color-btn" style="background-color: #ff00ff;"></button>
+                            <button class="color-btn" style="background-color: #00ffff;"></button>
+                        </div>
+                        <button class="btn primary" id="save-coloring">Speichern</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="questionnaire-container" id="stress-test" style="display: none;">
+            <div class="container">
+                <div class="questionnaire-header">
+                    <h2>Stress-Level-Test</h2>
+                    <button class="btn secondary" id="close-stress-test">Schließen</button>
+                </div>
+                <div class="questionnaire-content">
+                    <div class="questionnaire-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="progress-text">Frage 1 von 10</span>
+                    </div>
+                    <div class="question-container">
+                        <h3 class="question-text">Wie oft fühlen Sie sich in letzter Zeit überfordert?</h3>
+                        <div class="answer-options">
+                            <label class="answer-option">
+                                <input type="radio" name="q1" value="1">
+                                <span>Nie</span>
+                            </label>
+                            <label class="answer-option">
+                                <input type="radio" name="q1" value="2">
+                                <span>Selten</span>
+                            </label>
+                            <label class="answer-option">
+                                <input type="radio" name="q1" value="3">
+                                <span>Manchmal</span>
+                            </label>
+                            <label class="answer-option">
+                                <input type="radio" name="q1" value="4">
+                                <span>Oft</span>
+                            </label>
+                            <label class="answer-option">
+                                <input type="radio" name="q1" value="5">
+                                <span>Sehr oft</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="questionnaire-navigation">
+                        <button class="btn secondary" id="prev-question" disabled>Zurück</button>
+                        <button class="btn primary" id="next-question">Weiter</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-container" id="test-results" style="display: none;">
+            <div class="container">
+                <div class="results-header">
+                    <h2>Ihre Testergebnisse</h2>
+                    <button class="btn secondary" id="close-results">Schließen</button>
+                </div>
+                <div class="results-content">
+                    <div class="results-summary">
+                        <h3>Zusammenfassung</h3>
+                        <div class="results-score">
+                            <div class="score-circle">
+                                <span class="score-value">65</span>
+                                <span class="score-label">/100</span>
+                            </div>
+                            <div class="score-interpretation">
+                                <h4>Mittleres Stresslevel</h4>
+                                <p>Ihr Stresslevel liegt im mittleren Bereich. Es gibt Raum für Verbesserung, aber Sie sind auf einem guten Weg.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-details">
+                        <h3>Detaillierte Auswertung</h3>
+                        <div class="results-category">
+                            <h4>Körperliche Symptome</h4>
+                            <div class="category-score">
+                                <div class="score-bar">
+                                    <div class="score-fill" style="width: 60%;"></div>
+                                </div>
+                                <span class="score-text">60%</span>
+                            </div>
+                            <p>Sie zeigen moderate körperliche Stresssymptome wie Verspannungen und Schlafprobleme.</p>
+                        </div>
+                        <div class="results-category">
+                            <h4>Emotionale Belastung</h4>
+                            <div class="category-score">
+                                <div class="score-bar">
+                                    <div class="score-fill" style="width: 70%;"></div>
+                                </div>
+                                <span class="score-text">70%</span>
+                            </div>
+                            <p>Ihre emotionale Belastung ist erhöht, was sich in Stimmungsschwankungen und Reizbarkeit äußern kann.</p>
+                        </div>
+                        <div class="results-category">
+                            <h4>Kognitive Funktionen</h4>
+                            <div class="category-score">
+                                <div class="score-bar">
+                                    <div class="score-fill" style="width: 50%;"></div>
+                                </div>
+                                <span class="score-text">50%</span>
+                            </div>
+                            <p>Ihre kognitiven Funktionen wie Konzentration und Gedächtnis sind leicht beeinträchtigt.</p>
+                        </div>
+                    </div>
+                    <div class="results-recommendations">
+                        <h3>Empfehlungen</h3>
+                        <ul class="recommendations-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h4>Regelmäßige Bewegung</h4>
+                                    <p>Mindestens 30 Minuten moderate Bewegung pro Tag können Ihr Stresslevel deutlich reduzieren.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h4>Achtsamkeitsübungen</h4>
+                                    <p>10 Minuten tägliche Meditation oder Achtsamkeitsübungen können helfen, Stress abzubauen.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h4>Zeitmanagement</h4>
+                                    <p>Überprüfen Sie Ihre Prioritäten und lernen Sie, "Nein" zu sagen, wenn nötig.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h4>Soziale Unterstützung</h4>
+                                    <p>Pflegen Sie Ihre sozialen Kontakte und suchen Sie bei Bedarf Unterstützung.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="results-actions">
+                        <button class="btn primary" id="download-results">Ergebnisse herunterladen</button>
+                        <button class="btn secondary" id="share-results">Ergebnisse teilen</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Innery</h3>
+                    <p>Moderne Psychotherapie mit KI-Unterstützung</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">Über uns</a></li>
+                        <li><a href="therapie.html">Therapie</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="ressourcen.html">Ressourcen</a></li>
+                        <li><a href="spiele.html">Spiele & Tests</a></li>
+                        <li><a href="index.html#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p><i class="fas fa-envelope"></i> doris.hrazdil@innery.at</p>
+                    <p><i class="fas fa-phone"></i> +43 699 11709889</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Wien, Österreich</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Innery. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
